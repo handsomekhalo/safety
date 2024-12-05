@@ -1,0 +1,368 @@
+/* Hero Section */
+/* Adjust carousel height */
+
+
+/* .hero-section {
+    background: url('../images/fire-background.png') no-repeat center center/cover;
+    padding: 100px 0;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+} */
+
+/* Accordion */
+.accordion-item {
+    border: 1px solid #ccc;
+}
+
+.accordion-button {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.accordion-body {
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #aaa;
+}
+
+
+.features-section {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 50px 0;
+  }
+  .feature {
+    max-width: 300px;
+  }
+  .feature-icon {
+    width: 150px;
+    height: 150px;
+  }
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .hero-banner {
+    background-image: url('/images/extingusish.png');
+    background-size: cover;  /* Scales the image to fit within the container */
+    background-position:center;  /* Centers the image */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);  /* Adds a dark overlay */
+}
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+  button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #ffc107;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: transparent;
+  }
+  
+
+  nav {
+    background-color: whitesmoke;
+  }
+
+  .header-color {
+    color: #F38A09;
+  }
+
+
+.choose-us-component h2 {
+  display: inline-block;
+  position: relative;
+  font-size: 24px; /* Adjust as needed */
+}
+
+.choose-us-component h2::after {
+  content: '';
+  display: block;
+  width: 100%; /* Underline spans the full width of the text */
+  height: 2px; /* Thickness of the underline */
+  background-color: #F59F2A; /* Color of the underline */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+.choose-us-component h2 {
+  display: inline-block;
+  position: relative;
+  font-size: 24px; /* Adjust as needed */
+}
+
+.choose-us-component h2::after {
+  content: '';
+  display: block;
+  width: 100%; /* Underline spans the full width of the text */
+  height: 2px; /* Thickness of the underline */
+  background-color: #F59F2A; /* Color of the underline */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+.rounded-image
+{
+  background-color: whitesmoke;
+}
+
+.btn-color{
+  background-color: #F28C18;
+  opacity: 80%;
+}
+
+
+
+.btn-color {
+  display: inline-flex; /* Keep the button inline */
+  align-items: center; /* Align content vertically in the center */
+  justify-content: center; /* Align content horizontally */
+  gap: 8px; /* Space between the text and the arrow */
+  text-align: center; /* Ensure the button text is centered */
+  background-color: #F4831A;
+  opacity: 70%;
+  color: black;
+}
+
+
+.box-icon {
+  vertical-align: middle;
+}
+
+
+/* Keyframe animation for card movement */
+@keyframes moveUp {
+  0% {
+      transform: translateY(30px);  /* Start below the original position */
+      opacity: 0;  /* Start hidden */
+  }
+  100% {
+      transform: translateY(0);  /* Move to the normal position */
+      opacity: 1;  /* Become fully visible */
+  }
+}
+
+/* Apply animation to each card */
+.card {
+  animation: moveUp 3s ease-out forwards;  /* Apply animation over 1 second */
+}
+
+/* Add a delay to each card to make them appear one after another */
+.card:nth-child(1) {
+  animation-delay: 0.7s;  /* Small delay for the first card */
+}
+
+.card:nth-child(2) {
+  animation-delay: 0.9s;  /* Delay for the second card */
+}
+
+.card:nth-child(3) {
+  animation-delay: 0.15s;  /* Delay for the third card */
+}
+
+
+.about-us-component {
+  margin: 20px;
+}
+
+.about-us-title {
+  color: #F4831A;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.about-us-content {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.vision-title,
+.mission-title {
+  color: #F4831A;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.btn-custom {
+  margin-top: 20px;
+  background-color: #F4831A;
+  color: white;
+}
+
+.btn-custom:hover {
+  background-color: #F4831A;
+}
+
+.image-section img {
+  border-radius: 8px;
+}
+
+
+
+.services-section {
+  padding: 40px 20px;
+}
+
+.services-title {
+  color: #F4831A;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  font-size: 1.8rem;
+}
+
+.services-subtitle {
+  border-bottom: 2px solid #F4831A;
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.services-description {
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.service-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.service-list li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.service-list li::before {
+  content: "🔥";
+  margin-right: 10px;
+  color: #F4831A;
+}
+
+.contact-btn {
+  margin-top: 20px;
+  background-color: #F4831A;
+  color: white;
+  font-weight: bold;
+}
+
+.contact-btn:hover {
+  background-color: #F4831A;
+}
+
+.image-section img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+
+/* .services-section {
+  padding: 40px 20px;
+}
+
+.services-title {
+  color: #d20000;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.services-subtitle {
+  border-bottom: 2px solid #d20000;
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.services-description {
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.extinguisher-category {
+  margin-top: 30px;
+}
+
+.extinguisher-category h3 {
+  color: #d20000;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.extinguisher-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.extinguisher-list li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.extinguisher-list li::before {
+  content: "🔥";
+  margin-right: 10px;
+  color: #d20000;
+}
+
+.contact-btn {
+  margin-top: 20px;
+  background-color: #d20000;
+  color: white;
+  font-weight: bold;
+}
+
+.contact-btn:hover {
+  background-color: #a00000;
+} */

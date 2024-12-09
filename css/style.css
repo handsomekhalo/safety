@@ -366,3 +366,81 @@ footer {
 .contact-btn:hover {
   background-color: #a00000;
 } */
+
+
+
+
+
+.contact-us-container {
+  padding: 40px 20px;
+}
+
+.contact-us-info{
+  /* margin-right: 50px; */
+}
+
+
+.contact-us-icon {
+  color: #d20000;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.contact-us-form .form-control {
+  margin-bottom: 15px;
+}
+
+.contact-us-btn-submit {
+  background-color: #d20000;
+  color: white;
+}
+
+.contact-us-btn-submit:hover {
+  background-color: #a00000;
+}
+
+
+/* .contact-us-line {
+  border: 0;
+  height: 3px;
+  background-color: #f4831a;
+  width: 50%;
+  margin: 10px 0;
+} */
+
+.contact-us-btn-submit {
+  text-align: left; /* Aligns text inside the button */
+  display: flex;    /* Makes the button content a flex container */
+  align-items: center; /* Vertically aligns text and icon */
+  justify-content: space-between; /* Adds space between text and icon */
+}
+
+/* .btn-color {
+  background-color: #f4831a;
+  color: white;
+  border: none;
+} */
+
+
+.contact-us-line {
+  border: 0;
+  height: 4px;
+  background-color: #f4831a;
+  width: 40%;
+  margin: 10px 0;
+}
+
+.contact-us-info p {
+  margin-bottom: 1rem;
+  display: flex; /* Aligns icon and text */
+  align-items: center; /* Vertically aligns the items */
+}
+
+.contact-us-info p span {
+  margin-left: 8px; /* Adds spacing between the icon and text */
+}
+
+
+.hero{
+  margin-top: 30px;
+}

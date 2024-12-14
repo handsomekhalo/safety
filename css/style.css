@@ -183,18 +183,6 @@ footer {
 }
 
 
-/* Keyframe animation for card movement */
-@keyframes moveUp {
-  0% {
-      transform: translateY(30px);  /* Start below the original position */
-      opacity: 0;  /* Start hidden */
-  }
-  100% {
-      transform: translateY(0);  /* Move to the normal position */
-      opacity: 1;  /* Become fully visible */
-  }
-}
-
 /* Apply animation to each card */
 .card {
   animation: moveUp 3s ease-out forwards;  /* Apply animation over 1 second */

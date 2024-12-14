@@ -1,37 +1,36 @@
 <?php
-$error = "";
-$successMessage = "";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'] ?? '';
+    $contact_no = $_POST['contact_no'] ?? '';
+    $email = $_POST['email'] ?? '';
+    $message = $_POST['message'] ?? '';
 
-if ($_POST) {
-    if (!$_POST["email"]) {
-        $error .= "An email address is required.<br>";
+    // Basic validation
+    if (empty($name) || empty($email) || empty($message)) {
+        echo "Please fill in all required fields.";
+        exit;
     }
 
-    if (!$_POST["content"]) {
-        $error .= "The content field is required.<br>";
+    // Validate email
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Invalid email format.";
+        exit;
     }
 
-    if (!$_POST["subject"]) {
-        $error .= "The subject is required.<br>";
-    }
+    // Your email sending or database storage logic goes here
+    // For example:
+    $to = "handsomekhalo@gmail.com";
+    $subject = "New Contact Form Submission";
+    $email_body = "Name: $name\n";
+    $email_body .= "Contact No: $contact_no\n";
+    $email_body .= "Email: $email\n";
+    $email_body .= "Message:\n$message";
 
-    if ($_POST['email'] && filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) === false) {
-        $error .= "The email address is invalid.<br>";
-    }
-
-    if ($error != "") {
-        $error = '<div class="alert alert-danger" role="alert"><p><strong>There were error(s) in your form:</strong></p>' . $error . '</div>';
+    // Send email
+    if (mail($to, $subject, $email_body)) {
+        echo "Message sent successfully!";
     } else {
-        $emailTo = "mprincesskhambule1994@gmail.com";
-        $subject = $_POST['subject'];
-        $content = $_POST['content'];
-        $headers = "From: " . $_POST['email'];
-
-        if (mail($emailTo, $subject, $content, $headers)) {
-            $successMessage = '<div class="alert alert-success" role="alert">Your message was sent, we\'ll get back to you ASAP!</div>';
-        } else {
-            $error = '<div class="alert alert-danger" role="alert"><p><strong>Your message couldn\'t be sent - please try again later</p></div>';
-        }
+        echo "Failed to send message.";
     }
 }
 ?>

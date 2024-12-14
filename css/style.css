@@ -432,3 +432,40 @@ footer {
 .hero{
   margin-top: 30px;
 }
+
+
+
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) { /* Adjust as per your screen size */
+  #services .card img {
+    opacity: 0;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  #services .card:nth-child(1) img {
+    animation-delay: 0.5s; /* Delay for the first image */
+    animation-name: moveUp;
+  }
+
+  #services .card:nth-child(2) img {
+    animation-delay: 2s; /* Delay for the second image */
+    animation-name: moveUp;
+  }
+
+  #services .card:nth-child(3) img {
+    animation-delay: 3.5s; /* Delay for the third image */
+    animation-name: moveUp;
+  }
+}

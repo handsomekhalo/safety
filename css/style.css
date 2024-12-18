@@ -469,3 +469,37 @@ footer {
     animation-name: moveUp;
   }
 }
+
+
+/* .client-contact {
+  font-size: 0.9rem;
+  border-bottom: 1px solid #ccc;
+}
+.social-links a {
+  color: #333;
+  font-size: 1.2rem;
+  text-decoration: none;
+} */
+/* .social-links a:hover {
+  color: #f28c18;
+} */
+
+
+.contact-details {
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+}
+
+.contact-details .contact-info p {
+  margin: 0;
+}
+
+.contact-details .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  margin-top: 0;
+}
